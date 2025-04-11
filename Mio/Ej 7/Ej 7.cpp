@@ -37,7 +37,7 @@ for (i = 0; i < j - 1; i++) {
     for (int k = i + 1; k < j; k++) {
         if (limpiaUno[i] > limpiaUno[k]) {
             char temp = limpiaUno[i];
-            impiaUno[i] = limpiaUno[k];
+            limpiaUno[i] = limpiaUno[k];
             limpiaUno[k] = temp;
         }
     }
