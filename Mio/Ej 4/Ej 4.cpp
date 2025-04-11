@@ -27,7 +27,7 @@ for (i=0;i<strlen(frase);i++) {
         fraseDos[i]=frase[i];
     }
 }
-
+fraseDos[i] = '\0';
 printf("La frase final es:\n%s\n", fraseDos);
 
 }
