@@ -54,19 +54,22 @@ switch(op){
         break;
     
 	case 'c':
-        for(int i = 0, toggle = 1; i < longitud; i++){
-            if(oracion[i] != ' '){
-                if(toggle % 2 == 0){
-                    oracionOpc[i] = toupper(oracion[i]);
-                } else {
-                    oracionOpc[i] = tolower(oracion[i]);
-                }
-                toggle++;
-            }
-        }
-        printf("La oracion alternando mayusculas y minusculas es: %s\n", oracionOpc);
-         flag=true;
-        break;
+    		for(int i = 0, toggle = 1; i < longitud; i++){
+        		if(oracion[i] != ' '){
+            		if(toggle % 2 == 0){
+                		oracionOpc[i] = toupper(oracion[i]);
+            		} else {
+                		oracionOpc[i] = tolower(oracion[i]);
+            		}
+            		toggle++;
+        		} else {
+            			oracionOpc[i] = oracion[i]; // copiar espacios u otros caracteres
+        		}
+    		}
+    	oracionOpc[longitud] = '\0'; // asegurarse de terminar la cadena
+    	printf("La oracion alternando mayusculas y minusculas es: %s\n", oracionOpc);
+    	flag = true;
+    	break;
         
 	case 'd':
         for(int i=0;i<longitud;i++){
