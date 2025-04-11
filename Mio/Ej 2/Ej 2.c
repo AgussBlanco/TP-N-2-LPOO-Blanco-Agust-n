@@ -13,7 +13,7 @@ int longitud=strlen(palabra);
 
 
 for(i=0;i<longitud;i++){
-letra=palabra[i+1];
+letra=palabra[i];
 
 if (letra == 'a' || letra == 'A' || letra == 'e' || letra == 'E' ||
             letra == 'i' || letra == 'I' || letra == 'o' || letra == 'O' ||
